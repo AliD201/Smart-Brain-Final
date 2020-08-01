@@ -54,7 +54,7 @@ const mapDispatchToProps = (dispatch) =>{
 
     onRouteChange: (route) =>{
       dispatch(setroute(route))
-      console.log(route)
+      // console.log(route)
       if ( route === 'signIn'){
         dispatch(setisSignedIn(false))
       }else if ( route === 'home'){
@@ -96,8 +96,8 @@ const app = new Clarifai.App({
 function App(props) {
 
   MyApp.faceBox = (dispatch) =>{
-      console.log("hey");
-      console.log(props.input);
+      // console.log("hey");
+      // console.log(props.input);
       dispatch(setimageUrl(props.input))
       app.models.predict(Clarifai.FACE_DETECT_MODEL, props.input).then(
       function(response) {

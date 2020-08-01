@@ -12,6 +12,7 @@
 /build
 /Redux
 /backend
+.App-Redux
 
 # misc
 .DS_Store
